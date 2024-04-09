@@ -2,3 +2,5 @@
 /.idea
 /venv_web_app
 /.env
+/static
+/staticfiles
