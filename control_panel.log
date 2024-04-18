@@ -1,0 +1,34 @@
+2024-04-11 11:29:07,428 - INFO - Received command: stop server
+2024-04-11 11:29:07,449 - INFO - Server stopped.
+2024-04-11 11:29:16,675 - INFO - Received command: stop server
+2024-04-11 11:29:16,696 - INFO - Server stopped.
+2024-04-11 11:29:29,756 - INFO - Received command: exit
+2024-04-11 11:29:29,778 - INFO - Exiting control panel.
+2024-04-11 11:31:37,328 - INFO - Received command: start server
+2024-04-11 11:31:37,350 - INFO - Server started.
+2024-04-11 11:31:55,954 - INFO - Received command: stop server
+2024-04-11 11:31:55,978 - INFO - Server stopped.
+2024-04-11 11:32:19,105 - INFO - Received command: start bot
+2024-04-11 11:32:19,105 - INFO - Bot started.
+2024-04-11 11:32:32,283 - INFO - Received command: stop bot
+2024-04-11 11:32:32,793 - INFO - Bot stopped.
+2024-04-11 11:32:48,729 - INFO - Received command: exit
+2024-04-11 11:32:48,752 - INFO - Exiting control panel.
+2024-04-11 11:33:07,455 - INFO - Received command: start server
+2024-04-11 11:33:07,497 - INFO - Server started.
+2024-04-11 12:00:26,455 - INFO - Received command: start bot
+2024-04-11 12:00:26,457 - INFO - Bot started.
+2024-04-11 12:00:36,362 - INFO - Received command: stop bot
+2024-04-11 12:00:36,917 - INFO - Bot stopped.
+2024-04-11 12:00:47,760 - INFO - Received command: start server
+2024-04-11 12:00:47,782 - INFO - Server started.
+2024-04-11 12:01:04,969 - INFO - Received command: stop server
+2024-04-11 12:01:04,990 - INFO - Server stopped.
+2024-04-11 12:01:12,470 - INFO - Received command: exit
+2024-04-11 12:01:12,502 - INFO - Exiting control panel.
+2024-04-11 12:30:42,721 - INFO - Received command: start server
+2024-04-11 12:30:42,744 - INFO - Server started.
+2024-04-11 12:32:58,032 - INFO - Received command: stop server
+2024-04-11 12:32:58,057 - INFO - Server stopped.
+2024-04-11 12:33:01,070 - INFO - Received command: exit
+2024-04-11 12:33:01,100 - INFO - Exiting control panel.

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+{% block header_title %}Dashboard{% endblock %}
+
+{% block menu %}
+<form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
+    {% csrf_token %}
+</form>
+
+<form id="admin-form" action="{% url 'admin:index' %}" method="post" style="display: none;">
+    {% csrf_token %}
+</form>
+
+<form id="home-form" action="{% url 'homepage' %}" method="post" style="display: none;">
+    {% csrf_token %}
+</form>
+
+<form id="online" action="{% url 'bot_status' %}" method="post" style="display: none;">
+    {% csrf_token %}
+</form>
+
+<div class="header">
+    <button class="menu-button">
+        <img src="{% static 'images/foto_for_git.jpg' %}" alt="Menu" class="menu-icon">
+    </button>
+    <div class="menu" id="menu">
+        <ul>
+            <li><button onclick="document.getElementById('home-form').submit()">Головна сторінка</button></li>
+            <li><button onclick="document.getElementById('admin-form').submit()">Адмінка Django</button></li>
+            <li><button onclick="document.getElementById('online').submit()">Online users</button></li>
+            <li><a href="#" onclick="toggleMenu(); event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+        </ul>
+    </div>
+    <div class="menu-backdrop"></div>
+</div>
+<!--<div class="menu-backdrop"></div>-->
+<!--<div class="header">-->
+<!--    <button class="menu-button" onclick="toggleMenu()">-->
+<!--        <img src="{% static 'images/foto_for_git.jpg' %}" alt="Menu" class="menu-icon">-->
+<!--    </button>-->
+<!--</div>-->
+<!--<nav class="menu" id="myMenu">-->
+<!--    <ul>-->
+<!--        <li><a href="#">Item 1</a></li>-->
+<!--        <li><a href="#">Item 2</a></li>-->
+<!--        &lt;!&ndash; Додайте інші пункти меню, які потрібно &ndash;&gt;-->
+<!--        <li><a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
+{% endblock %}
+
+{% block content %}
+    <h2>Welcome {{ user }}!</h2>
+    <p>This is your personal cabinet. Here you can...</p>
+    <!-- Додайте ваш вміст для сторінки після входу -->
+{% endblock %}
+
+

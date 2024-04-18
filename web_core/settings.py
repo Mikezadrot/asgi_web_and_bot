@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
+from datetime import timedelta
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,17 +42,27 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bot_core',
+    'customers',
+    'departments',
+    'administrators',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'web_core.middleware.auto_logout',
+
     'whitenoise.middleware.WhiteNoiseMiddleware',
+
+
+
 ]
 
 ROOT_URLCONF = 'web_core.urls'
@@ -164,3 +175,20 @@ CHANNEL_LAYERS = {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',
     },
 }
+
+
+LOGIN_URL = '/login/'  # Шлях до сторінки авторизації
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_URL = '/logout/'  # Шлях до сторінки авторизації
+LOGOUT_REDIRECT_URL = '/login/'
+
+AUTO_LOGOUT = {
+    'IDLE_TIME': timedelta(minutes=1),
+    'SESSION_TIME': timedelta(minutes=2),
+    'MESSAGE': 'The session has expired. Please login again to continue.',
+    'REDIRECT_TO_LOGIN_IMMEDIATELY': True,
+}
+
+
+

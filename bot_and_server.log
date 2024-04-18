@@ -1,0 +1,1110 @@
+2024-04-10 18:09:08 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:09:08 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:09:09 - aiogram.event - INFO - Update id=178579648 is handled. Duration 183 ms by bot id=7086338574
+2024-04-10 18:09:15 - aiogram.event - INFO - Update id=178579649 is handled. Duration 131 ms by bot id=7086338574
+2024-04-10 18:09:20 - aiogram.event - INFO - Update id=178579650 is handled. Duration 91 ms by bot id=7086338574
+2024-04-10 18:09:33 - aiogram.event - INFO - Update id=178579651 is handled. Duration 69 ms by bot id=7086338574
+2024-04-10 18:09:46 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-10 18:09:46 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:09:46 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 41 seconds.
+Original description: Too Many Requests: retry after 41
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:10:06 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:10:06 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 15:10:06,755 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:10:06,755 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-10 15:10:06,755 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:10:06,755 INFO     Listening on TCP address 0.0.0.0:8888
+2024-04-10 18:10:06 - aiogram.event - INFO - Update id=178579652 is handled. Duration 181 ms by bot id=7086338574
+2024-04-10 18:10:09 - aiogram.event - INFO - Update id=178579653 is handled. Duration 82 ms by bot id=7086338574
+2024-04-10 18:10:16 - aiogram.event - INFO - Update id=178579654 is handled. Duration 131 ms by bot id=7086338574
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_server.py", line 17, in <module>
+2024-04-10 18:10:33 - aiogram.dispatcher - WARNING - Received SIGINT signal
+    django_thread.join()
+  File "/usr/lib/python3.11/threading.py", line 1119, in join
+2024-04-10 15:10:33,094 INFO     Killed 0 pending application instances
+    self._wait_for_tstate_lock()
+2024-04-10 18:10:33 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+  File "/usr/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+2024-04-10 18:10:33 - aiogram.dispatcher - INFO - Polling stopped
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+127.0.0.1:34596 - - [10/Apr/2024:15:10:23] "GET /login/?next=/" 200 3211
+127.0.0.1:34596 - - [10/Apr/2024:15:10:23] "GET /static/css/styles.css" 200 3194
+2024-04-10 18:12:47 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:12:47 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:12:47 - aiogram.event - INFO - Update id=178579655 is handled. Duration 242 ms by bot id=7086338574
+2024-04-10 18:13:00 - aiogram.event - INFO - Update id=178579656 is handled. Duration 63 ms by bot id=7086338574
+2024-04-10 18:13:08 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-10 18:13:08 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:13:08 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 579 seconds.
+Original description: Too Many Requests: retry after 579
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:13:49 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:13:50 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:13:59 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-10 18:13:59 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:13:59 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 527 seconds.
+Original description: Too Many Requests: retry after 527
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:14:06 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:14:06 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:14:09 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-10 18:14:09 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:14:09 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 517 seconds.
+Original description: Too Many Requests: retry after 517
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:14:24 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:14:24 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:14:26 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-10 18:14:26 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:14:26 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 500 seconds.
+Original description: Too Many Requests: retry after 500
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:14:36 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:14:36 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:14:37 - aiogram.event - INFO - Update id=178579657 is handled. Duration 182 ms by bot id=7086338574
+2024-04-10 18:14:39 - aiogram.event - INFO - Update id=178579658 is handled. Duration 83 ms by bot id=7086338574
+2024-04-10 18:14:40 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-10 18:14:40 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:14:40 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 486 seconds.
+Original description: Too Many Requests: retry after 486
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:14:55 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:14:55 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 15:14:55,293 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:14:55,293 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-10 15:14:55,293 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:14:55,294 INFO     Listening on TCP address 0.0.0.0:8888
+2024-04-10 18:14:55 - aiogram.event - INFO - Update id=178579659 is handled. Duration 298 ms by bot id=7086338574
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_server.py", line 17, in <module>
+2024-04-10 18:14:58 - aiogram.dispatcher - WARNING - Received SIGINT signal
+    django_thread.join()
+  File "/usr/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+2024-04-10 15:14:58,449 INFO     Killed 0 pending application instances
+2024-04-10 18:14:58 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+    if lock.acquire(block, timeout):
+2024-04-10 18:14:58 - aiogram.dispatcher - INFO - Polling stopped
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 468 seconds.
+Original description: Too Many Requests: retry after 468
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:15:26 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:15:26 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 15:15:26,927 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:15:26,927 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-10 15:15:26,927 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:15:26,927 INFO     Listening on TCP address 0.0.0.0:8888
+2024-04-10 18:15:27 - aiogram.event - INFO - Update id=178579660 is handled. Duration 230 ms by bot id=7086338574
+2024-04-10 18:15:29 - aiogram.event - INFO - Update id=178579661 is handled. Duration 150 ms by bot id=7086338574
+2024-04-10 18:15:40 - aiogram.event - INFO - Update id=178579662 is handled. Duration 294 ms by bot id=7086338574
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_server.py", line 17, in <module>
+    django_thread.join()
+2024-04-10 18:15:53 - aiogram.dispatcher - WARNING - Received SIGINT signal
+  File "/usr/lib/python3.11/threading.py", line 1119, in join
+2024-04-10 15:15:53,489 INFO     Killed 0 pending application instances
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+2024-04-10 18:15:53 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-10 18:15:53 - aiogram.dispatcher - INFO - Polling stopped
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 413 seconds.
+Original description: Too Many Requests: retry after 413
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:19:12 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:19:12 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:19:12 - aiogram.event - INFO - Update id=178579663 is handled. Duration 178 ms by bot id=7086338574
+2024-04-10 18:19:14 - aiogram.event - INFO - Update id=178579664 is handled. Duration 75 ms by bot id=7086338574
+2024-04-10 18:19:17 - aiogram.event - INFO - Update id=178579665 is handled. Duration 93 ms by bot id=7086338574
+2024-04-10 18:19:19 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:19:19 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:19:19 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 208 seconds.
+Original description: Too Many Requests: retry after 208
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:19:30 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:19:30 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:19:31 - aiogram.event - INFO - Update id=178579667 is handled. Duration 169 ms by bot id=7086338574
+2024-04-10 18:19:31 - aiogram.event - INFO - Update id=178579666 is handled. Duration 182 ms by bot id=7086338574
+2024-04-10 18:19:31 - aiogram.event - INFO - Update id=178579668 is handled. Duration 76 ms by bot id=7086338574
+2024-04-10 18:19:37 - aiogram.event - INFO - Update id=178579669 is handled. Duration 168 ms by bot id=7086338574
+2024-04-10 18:19:39 - aiogram.event - INFO - Update id=178579670 is handled. Duration 201 ms by bot id=7086338574
+2024-04-10 18:19:40 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:19:40 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:19:40 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 186 seconds.
+Original description: Too Many Requests: retry after 186
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:19:50 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:19:51 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:19:51 - aiogram.event - INFO - Update id=178579671 is handled. Duration 190 ms by bot id=7086338574
+2024-04-10 18:19:54 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:19:54 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:19:54 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 172 seconds.
+Original description: Too Many Requests: retry after 172
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:20:02 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:20:02 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:20:02 - aiogram.event - INFO - Update id=178579672 is handled. Duration 235 ms by bot id=7086338574
+2024-04-10 18:20:10 - aiogram.event - INFO - Update id=178579673 is handled. Duration 85 ms by bot id=7086338574
+2024-04-10 18:20:17 - aiogram.event - INFO - Update id=178579674 is handled. Duration 162 ms by bot id=7086338574
+2024-04-10 18:20:18 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:20:18 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:20:18 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 148 seconds.
+Original description: Too Many Requests: retry after 148
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:20:30 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:20:30 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 15:20:30,774 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:20:30,774 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-10 15:20:30,774 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-10 15:20:30,774 INFO     Listening on TCP address 0.0.0.0:8888
+2024-04-10 18:20:30 - aiogram.event - INFO - Update id=178579676 is handled. Duration 193 ms by bot id=7086338574
+2024-04-10 18:20:30 - aiogram.event - INFO - Update id=178579675 is handled. Duration 197 ms by bot id=7086338574
+2024-04-10 18:20:37 - aiogram.event - INFO - Update id=178579677 is handled. Duration 125 ms by bot id=7086338574
+2024-04-10 18:20:45 - aiogram.event - INFO - Update id=178579678 is handled. Duration 128 ms by bot id=7086338574
+2024-04-10 18:20:50 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:20:50 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:20:50 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 116 seconds.
+Original description: Too Many Requests: retry after 116
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:21:52 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:21:52 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:21:52 - aiogram.event - INFO - Update id=178579679 is handled. Duration 172 ms by bot id=7086338574
+2024-04-10 18:21:52 - aiogram.event - INFO - Update id=178579680 is handled. Duration 177 ms by bot id=7086338574
+2024-04-10 18:22:07 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:22:07 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:22:07 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:07 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7086338574)
+2024-04-10 18:22:10 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:22:10 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:22:10 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 36 seconds.
+Original description: Too Many Requests: retry after 36
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-10 18:22:11 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:11 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7086338574)
+2024-04-10 18:22:12 - aiogram.dispatcher - INFO - Start polling
+2024-04-10 18:22:12 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:22:15 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:15 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7086338574)
+2024-04-10 18:22:16 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:16 - aiogram.dispatcher - WARNING - Sleep for 1.325123 seconds and try again... (tryings = 1, bot id = 7086338574)
+2024-04-10 18:22:21 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:21 - aiogram.dispatcher - WARNING - Sleep for 1.142125 seconds and try again... (tryings = 1, bot id = 7086338574)
+2024-04-10 18:22:22 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:22 - aiogram.dispatcher - WARNING - Sleep for 1.558377 seconds and try again... (tryings = 2, bot id = 7086338574)
+2024-04-10 18:22:27 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:27 - aiogram.dispatcher - WARNING - Sleep for 1.431543 seconds and try again... (tryings = 2, bot id = 7086338574)
+2024-04-10 18:22:28 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:28 - aiogram.dispatcher - WARNING - Sleep for 2.075650 seconds and try again... (tryings = 3, bot id = 7086338574)
+2024-04-10 18:22:33 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:33 - aiogram.dispatcher - WARNING - Sleep for 1.853884 seconds and try again... (tryings = 3, bot id = 7086338574)
+2024-04-10 18:22:35 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:35 - aiogram.dispatcher - WARNING - Sleep for 2.473352 seconds and try again... (tryings = 4, bot id = 7086338574)
+2024-04-10 18:22:41 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:41 - aiogram.dispatcher - WARNING - Sleep for 2.543784 seconds and try again... (tryings = 4, bot id = 7086338574)
+2024-04-10 18:22:44 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:44 - aiogram.dispatcher - WARNING - Sleep for 3.434418 seconds and try again... (tryings = 5, bot id = 7086338574)
+2024-04-10 18:22:47 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:47 - aiogram.dispatcher - WARNING - Sleep for 3.424934 seconds and try again... (tryings = 5, bot id = 7086338574)
+2024-04-10 18:22:50 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-04-10 18:22:50 - aiogram.dispatcher - WARNING - Sleep for 4.279761 seconds and try again... (tryings = 6, bot id = 7086338574)
+2024-04-10 18:22:52 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:22:52 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:22:52 - aiogram.dispatcher - INFO - Polling stopped
+2024-04-10 18:22:52 - aiogram.dispatcher - INFO - Connection established (tryings = 6, bot id = 7086338574)
+2024-04-10 15:23:00,961 WARNING  Not Found: /favicon.ico
+2024-04-10 15:24:15,948 INFO     Killed 0 pending application instances
+127.0.0.1:36870 - - [10/Apr/2024:15:22:19] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:22:19] "GET /static/css/styles.css" 200 3194
+127.0.0.1:36870 - - [10/Apr/2024:15:22:44] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:22:49] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:22:51] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:22:54] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:22:59] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:00] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:00] "GET /static/css/styles.css" 200 3194
+127.0.0.1:36870 - - [10/Apr/2024:15:23:00] "GET /favicon.ico" 404 179
+127.0.0.1:36870 - - [10/Apr/2024:15:23:05] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:08] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:09] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:09] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:10] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:10] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:11] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:11] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:12] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:12] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:12] "GET /login/?next=/" 200 3211
+127.0.0.1:36870 - - [10/Apr/2024:15:23:13] "GET /login/?next=/" 200 3211
+2024-04-10 18:24:38 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-10 18:24:38 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-10 18:24:38 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 494 seconds.
+Original description: Too Many Requests: retry after 494
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-11 09:17:01 - aiogram.dispatcher - INFO - Start polling
+2024-04-11 09:17:01 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 09:17:01 - aiogram.event - INFO - Update id=178579683 is handled. Duration 417 ms by bot id=7086338574
+2024-04-11 09:17:01 - aiogram.event - INFO - Update id=178579684 is handled. Duration 417 ms by bot id=7086338574
+2024-04-11 09:17:01 - aiogram.event - INFO - Update id=178579682 is handled. Duration 460 ms by bot id=7086338574
+2024-04-11 09:17:02 - aiogram.event - INFO - Update id=178579681 is handled. Duration 488 ms by bot id=7086338574
+2024-04-11 09:17:14 - aiogram.event - INFO - Update id=178579685 is handled. Duration 88 ms by bot id=7086338574
+2024-04-11 09:17:23 - aiogram.event - INFO - Update id=178579686 is handled. Duration 74 ms by bot id=7086338574
+2024-04-11 11:13:10 - aiogram.dispatcher - INFO - Start polling
+2024-04-11 11:13:11 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:13:28 - aiogram.event - INFO - Update id=178579688 is handled. Duration 247 ms by bot id=7086338574
+2024-04-11 11:13:35 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-11 11:13:35 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:13:35 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 575 seconds.
+Original description: Too Many Requests: retry after 575
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-11 08:14:06,265 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-11 08:14:06,265 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-11 08:14:06,266 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-11 08:14:06,266 INFO     Listening on TCP address 0.0.0.0:8888
+Exception ignored in: <module 'threading' from '/usr/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
+2024-04-11 08:14:11,575 INFO     Killed 0 pending application instances
+    lock.acquire()
+KeyboardInterrupt: 
+127.0.0.1:41584 - - [11/Apr/2024:08:14:08] "GET /login/?next=/" 200 896
+127.0.0.1:41584 - - [11/Apr/2024:08:14:08] "GET /static/css/styles.css" 200 3175
+127.0.0.1:41594 - - [11/Apr/2024:08:14:08] "GET /static/js/script.js" 200 1189
+2024-04-11 08:14:21,815 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-11 08:14:21,815 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-11 08:14:21,815 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-11 08:14:21,815 INFO     Listening on TCP address 0.0.0.0:8888
+Exception ignored in: <module 'threading' from '/usr/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/threading.py", line 1590, in _shutdown
+    lock.acquire()
+2024-04-11 08:14:24,320 INFO     Killed 0 pending application instances
+KeyboardInterrupt: 
+127.0.0.1:49138 - - [11/Apr/2024:08:14:22] "GET /login/?next=/" 200 896
+2024-04-11 11:14:30 - aiogram.dispatcher - INFO - Start polling
+2024-04-11 11:14:30 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:14:31 - aiogram.event - INFO - Update id=178579689 is handled. Duration 235 ms by bot id=7086338574
+2024-04-11 11:14:36 - aiogram.event - INFO - Update id=178579690 is handled. Duration 107 ms by bot id=7086338574
+2024-04-11 11:14:39 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-11 11:14:39 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:14:39 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 511 seconds.
+Original description: Too Many Requests: retry after 511
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-11 11:14:49 - aiogram.dispatcher - INFO - Start polling
+2024-04-11 11:14:49 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:14:49 - aiogram.event - INFO - Update id=178579691 is handled. Duration 171 ms by bot id=7086338574
+2024-04-11 11:14:52 - aiogram.event - INFO - Update id=178579692 is handled. Duration 141 ms by bot id=7086338574
+2024-04-11 11:14:57 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2024-04-11 11:14:57 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:14:57 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 493 seconds.
+Original description: Too Many Requests: retry after 493
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-11 11:16:16 - aiogram.dispatcher - INFO - Start polling
+2024-04-11 11:16:16 - aiogram.dispatcher - INFO - Run polling for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:16:16 - aiogram.event - INFO - Update id=178579693 is handled. Duration 221 ms by bot id=7086338574
+2024-04-11 11:16:19 - aiogram.event - INFO - Update id=178579694 is handled. Duration 138 ms by bot id=7086338574
+2024-04-11 11:16:22 - aiogram.event - INFO - Update id=178579695 is handled. Duration 91 ms by bot id=7086338574
+2024-04-11 11:16:23 - aiogram.event - INFO - Update id=178579696 is handled. Duration 139 ms by bot id=7086338574
+2024-04-11 11:16:24 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2024-04-11 11:16:24 - aiogram.dispatcher - INFO - Polling stopped for bot @prosto_sexbot id=7086338574 - '🤡КРАСАВЧИК💩'
+2024-04-11 11:16:24 - aiogram.dispatcher - INFO - Polling stopped
+Traceback (most recent call last):
+  File "/home/mykhailo/education/web_app_bot/run_bot.py", line 11, in <module>
+    main()
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 38, in main
+    asyncio.run(dp.start_polling(bot))
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 556, in start_polling
+    await self.emit_shutdown(bot=bots[-1], **workflow_data)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 255, in emit_shutdown
+    await self.shutdown.trigger(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/bot_core/application_core/bot.py", line 27, in aiogram_on_shutdown_polling
+    await bot.close()  # Вимкнення бота
+    ^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 827, in close
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mykhailo/education/web_app_bot/venv_web_app/lib/python3.11/site-packages/aiogram/client/session/base.py", line 110, in check_response
+    raise TelegramRetryAfter(
+aiogram.exceptions.TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'Close'. Retry in 406 seconds.
+Original description: Too Many Requests: retry after 406
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2024-04-11 08:16:35,753 INFO     Starting server at tcp:port=8888:interface=0.0.0.0
+2024-04-11 08:16:35,753 INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2024-04-11 08:16:35,753 INFO     Configuring endpoint tcp:port=8888:interface=0.0.0.0
+2024-04-11 08:16:35,754 INFO     Listening on TCP address 0.0.0.0:8888
+2024-04-11 08:17:40,267 INFO     Killed 0 pending application instances
+127.0.0.1:54050 - - [11/Apr/2024:08:16:38] "GET /login/?next=/" 200 896
+127.0.0.1:54050 - - [11/Apr/2024:08:16:38] "GET /static/css/styles.css" 200 3175
+127.0.0.1:54064 - - [11/Apr/2024:08:16:38] "GET /static/js/script.js" 200 1189
+127.0.0.1:37598 - - [11/Apr/2024:08:16:47] "GET /login/?next=/" 200 896
+127.0.0.1:37598 - - [11/Apr/2024:08:16:48] "GET /login/?next=/" 200 896
+127.0.0.1:37598 - - [11/Apr/2024:08:16:52] "GET /login/?next=/" 200 896
+127.0.0.1:37598 - - [11/Apr/2024:08:16:53] "GET /login/?next=/" 200 896
+127.0.0.1:54064 - - [11/Apr/2024:08:17:00] "GET /login/?next=/" 200 896

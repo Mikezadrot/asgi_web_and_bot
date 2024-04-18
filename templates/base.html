@@ -1,0 +1,41 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/users_connect.js' %}" data-user="{{ user }}"></script>
+
+</head>
+<body>
+    {% block header %}
+        <header>
+            <h1>{% block header_title %}My Website{% endblock %}</h1>
+            {% block menu %}{% endblock %}
+        </header>
+    {% endblock %}
+
+    {% block main %}
+        <main>
+            {% for message in messages %}
+                <div class="message {{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </main>
+    {% endblock %}
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% block footer %}
+    <footer>
+        &copy; 2024 My Website
+    </footer>
+    {% endblock %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

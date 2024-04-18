@@ -1,0 +1,1 @@
+from .default_connect import test_send_message as default_send

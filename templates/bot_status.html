@@ -1,0 +1,16 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Online Users</title>
+    <script src="{% static 'js/users_connect.js' %}" data-user="{{ user }}"></script>
+</head>
+<body>
+    <h1>Online Users</h1>
+    <p>Your ip local is {{ client_ip }}</p>
+    <p id="online-users-count">Loading...</p>
+    <table id="online-users-table">
+        <!-- Тут будуть рядки таблиці -->
+    </table>
+</body>
+</html>
